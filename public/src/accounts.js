@@ -1,16 +1,16 @@
+// Find an account by given ID
 function findAccountById(accounts, id) {
   return accounts.find((account) => account.id === id);
-  // Hint: You can use the [`find()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) method here. 
 }
 
+// Sorts given accounts by last name (case-insensitive)
 function sortAccountsByLastName(accounts) {
-  return accounts.sort((accountA, accountB) => accountA.name.last.toLowerCase() < accountB.name.last.toLowerCase() ? -1 : 1);;
-  // Hint: You can use the [`sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method here. 
+  return accounts.sort((accountA, accountB) => accountA.name.last.toLowerCase() < accountB.name.last.toLowerCase() ? -1 : 1);
 }
 
+// Gets full names of account owners (first + last)
 function getAccountFullNames(accounts) {
   return accounts.map((account) => `${account.name.first} ${account.name.last}`);
-  // Hint: You can use the [`map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) method here.
 }
 
 // NOTE: YOU DON'T HAVE TO EDIT THE FUNCTIONS BELOW

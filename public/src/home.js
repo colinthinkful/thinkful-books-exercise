@@ -1,18 +1,18 @@
+// Gets the total number of books
 function getTotalBooksCount(books) {
   return books.length;
 }
 
+// Gets the total number of accounts
 function getTotalAccountsCount(accounts) {
   return accounts.length;
 }
 
+// Returns the total number of books that have been borrowed and not returned
 function getBooksBorrowedCount(books) {
   let totalBorrows = 0;
   books.forEach((book) => totalBorrows += book.borrows.filter((borrow) => borrow.returned === false).length);
   return totalBorrows;
-
-  // Hint: You can use the [`filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) method here. 
-  // If you get stuck, feel free to take a look at this repl.it: https://replit.com/@thinkful/getBooksBorrowedCount#index.js
 }
 
 // Tbis is a helper function that's called by other functions inside this file. You don't have to edit it.
